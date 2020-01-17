@@ -279,9 +279,9 @@ extension SQS {
         ]
 
         /// A list of  BatchResultErrorEntry  items.
-        public let failed: [BatchResultErrorEntry]
+        public let failed: [BatchResultErrorEntry]?
         /// A list of  DeleteMessageBatchResultEntry  items.
-        public let successful: [DeleteMessageBatchResultEntry]
+        public let successful: [DeleteMessageBatchResultEntry]?
 
         public init(failed: [BatchResultErrorEntry], successful: [DeleteMessageBatchResultEntry]) {
             self.failed = failed
