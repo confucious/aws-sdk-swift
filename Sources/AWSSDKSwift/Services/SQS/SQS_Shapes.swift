@@ -687,23 +687,14 @@ extension SQS {
 
     public enum QueueAttributeName: String, CustomStringConvertible, Codable {
         case all = "All"
-        case policy = "Policy"
-        case visibilitytimeout = "VisibilityTimeout"
-        case maximummessagesize = "MaximumMessageSize"
-        case messageretentionperiod = "MessageRetentionPeriod"
-        case approximatenumberofmessages = "ApproximateNumberOfMessages"
-        case approximatenumberofmessagesnotvisible = "ApproximateNumberOfMessagesNotVisible"
-        case createdtimestamp = "CreatedTimestamp"
-        case lastmodifiedtimestamp = "LastModifiedTimestamp"
-        case queuearn = "QueueArn"
-        case approximatenumberofmessagesdelayed = "ApproximateNumberOfMessagesDelayed"
-        case delayseconds = "DelaySeconds"
-        case receivemessagewaittimeseconds = "ReceiveMessageWaitTimeSeconds"
-        case redrivepolicy = "RedrivePolicy"
-        case fifoqueue = "FifoQueue"
-        case contentbaseddeduplication = "ContentBasedDeduplication"
-        case kmsmasterkeyid = "KmsMasterKeyId"
-        case kmsdatakeyreuseperiodseconds = "KmsDataKeyReusePeriodSeconds"
+        case approximateFirstReceiveTimestamp = "ApproximateFirstReceiveTimestamp"
+        case approximateReceiveCount = "ApproximateReceiveCount"
+        case awsTraceHeader = "AWSTraceHeader"
+        case senderId = "SenderId"
+        case sentTimestamp = "SentTimestamp"
+        case messageDeduplicationId = "MessageDeduplicationId"
+        case messageGroupId = "MessageGroupId"
+        case sequenceNumber = "SequenceNumber"
         public var description: String { return self.rawValue }
     }
 
