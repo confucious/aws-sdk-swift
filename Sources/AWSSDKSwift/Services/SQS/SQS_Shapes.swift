@@ -274,8 +274,8 @@ extension SQS {
 
     public struct DeleteMessageBatchResult: AWSShape {
         public static var _members: [AWSShapeMember] = [
-            AWSShapeMember(label: "Failed", location: .body(locationName: "BatchResultErrorEntry"), required: true, type: .list, encoding: .flatList), 
-            AWSShapeMember(label: "Successful", location: .body(locationName: "DeleteMessageBatchResultEntry"), required: true, type: .list, encoding: .flatList)
+            AWSShapeMember(label: "Failed", location: .body(locationName: "BatchResultErrorEntry"), required: false, type: .list, encoding: .flatList),
+            AWSShapeMember(label: "Successful", location: .body(locationName: "DeleteMessageBatchResultEntry"), required: false, type: .list, encoding: .flatList)
         ]
 
         /// A list of  BatchResultErrorEntry  items.
